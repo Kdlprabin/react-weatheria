@@ -1,0 +1,70 @@
+:root {
+  --primary: rgb(22, 22, 155);
+  --secondary: rgb(48, 48, 48);
+  --background: white;
+}
+
+body {
+  color: var(--background);
+  text-align: center;
+  background-color: var(--primary);
+}
+
+.container {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 80vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.Header .h-child :hover{
+  color:var(--primary);
+  cursor: pointer;
+}
+
+.location-date {
+  line-height: 1rem;
+}
+
+.location {
+  font-size: 4rem;
+}
+
+.date {
+  font-size: 1.5rem;
+}
+
+.temperature {
+  font-size: 6rem;
+}
+.line {
+  font-size: 2rem;
+}
+.w-icon {
+  font-size: 5rem;
+}
+.w-addInfo {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.w-addInfo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-addInfo div span {
+  font-size: 1rem;
+}
