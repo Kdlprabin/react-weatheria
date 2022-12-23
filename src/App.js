@@ -22,7 +22,7 @@ function App() {
         <div className="Header">
           <BsFillGrid3X3GapFill className="h-child" />
           <label>Weatheria</label>
-          <FiRefreshCw  className="h-child" onClick={handleRefresh} />
+          <FiRefreshCw className="h-child" onClick={handleRefresh} />
         </div>
         <LocationDate />
         <div className="temperature">{data.temperature}°C</div>
