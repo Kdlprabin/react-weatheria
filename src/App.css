@@ -10,20 +10,18 @@ body {
   background-color: var(--primary);
 }
 
-.App{
-  display: flex;
-}
 .toggle-container{
   position: absolute;
-  background-color:green;
+  background-color:var(--primary);
+  opacity: 90%;
   height: 100vh;
-  width: 100vw;
+  width: 85vw;
 }
 .container {
   background-image: url("./images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 80vw;
+  width: 80vw;
   height: 95vh;
   display: flex;
   flex-direction: column;
