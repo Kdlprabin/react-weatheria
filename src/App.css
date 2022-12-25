@@ -10,6 +10,15 @@ body {
   background-color: var(--primary);
 }
 
+.App{
+  display: flex;
+}
+.toggle-container{
+  position: absolute;
+  background-color:green;
+  height: 100vh;
+  width: 100vw;
+}
 .container {
   background-image: url("./images/background.jpg");
   background-size: cover;
