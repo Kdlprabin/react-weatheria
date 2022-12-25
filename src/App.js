@@ -8,9 +8,13 @@ import LocationDate from "./components/LocationDate";
 function App() {
   const a = useContext(WeatherContext);
   const [data, setData] = useState(a.state);
+  const [toggle, setToggle] = useState(false);
   function handleRefresh() {
     a.update();
     setData(a.state);
+  }
+  function handleToggle(){
+    toggle ? setToggle(false): setToggle(true);
   }
   useEffect(() => {
     a.update();
@@ -18,12 +22,14 @@ function App() {
   }, [a.state]);
   return (
     <div className="App">
-      <div className="toggle-container">
-        
-      </div>
+      {toggle && (
+        <div className="toggle-container">
+          <button onClick={handleToggle}>close</button>
+        </div>
+      )}
       <div className="container">
         <div className="Header">
-          <BsFillGrid3X3GapFill className="h-child" />
+          <BsFillGrid3X3GapFill className="h-child" onClick={handleToggle} />
           <label>Weatheria</label>
           <FiRefreshCw className="h-child" onClick={handleRefresh} />
         </div>
